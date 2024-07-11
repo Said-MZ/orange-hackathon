@@ -3,7 +3,7 @@ import React from "react";
 
 const Contact = () => {
   return (
-    <section className="bg-primary text-background p-12">
+    <section className="bg-primary text-background p-12" id="#contact">
       <h1 className="text-4xl font-bold text-center py-8">Contact</h1>
       <p>Official physical addresses of each academy:</p>
       <ul className="list-disc pl-8">

@@ -42,7 +42,7 @@ const Impact = () => {
   ];
 
   return (
-    <section className="layout-wrapper -z-40">
+    <section className="layout-wrapper -z-40" id="#impact">
       <h2 className="text-xl md:text-5xl font-bold mb-12 text-center">
         Our Impact
       </h2>
