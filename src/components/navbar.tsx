@@ -7,12 +7,7 @@ import Link from "next/link";
 
 const Navbar = () => {
   // to do: replace with social media icons later
-  const socials: [
-    {
-      title: string;
-      url: string;
-    }
-  ] = [
+  const socials: { title: string; url: string }[] = [
     {
       title: "Twitter",
       url: "https://twitter.com/ODCJordan",
@@ -28,34 +23,6 @@ const Navbar = () => {
     {
       title: "LinkedIn",
       url: "https://www.linkedin.com/company/orange-jordan/?originalSubdomain=jo",
-    },
-  ];
-
-  const links: [
-    {
-      title: string;
-      url: string;
-    }
-  ] = [
-    {
-      title: "Home",
-      url: "#hero",
-    },
-    {
-      title: "About Us",
-      url: "#about",
-    },
-    {
-      title: "Our Impact",
-      url: "#impact",
-    },
-    {
-      title: "Locations",
-      url: "#locations",
-    },
-    {
-      title: "Contact Us",
-      url: "#contact",
     },
   ];
 
