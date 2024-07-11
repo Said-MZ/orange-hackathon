@@ -5,7 +5,7 @@ import { Avatar, AvatarFallback, AvatarImage } from "@radix-ui/react-avatar";
 
 const Hero = () => {
   return (
-    <section className="layout-wrapper">
+    <section className="layout-wrapper pt-32" id="#hero">
       <div className="flex flex-col md:flex-row  justify-center items-start w-full gap-12 text-center md:text-left">
         <div className="mt-8 w-full block mx-auto">
           <h1 className="text-4xl sm:text-5xl md:text-5xl font-extrabold">
