@@ -18,9 +18,9 @@ const About = () => {
         year, students are selected to join the Academy through a competitive
         admissions process. Building on its initial success, our coding academy
         graduates now boast an impressive 85% employment rate across all
-        cohorts. This affirms the efficiency of the academy’s teaching
+        cohorts. This affirms the efficiency of the academys teaching
         methodology, curricula, and academic staff. Moreover, the academy has
-        expanded across the kingdom's governorates. It has established academies
+        expanded across the kingdoms governorates. It has established academies
         in Irbid, Zarqa, Balqa, and Aqaba, further extending its impact and
         accessibility.
       </p>

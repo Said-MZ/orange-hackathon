@@ -12,7 +12,7 @@ const Hero = () => {
             <span className=" bg-gradient-to-r from-[#ff5900] to-[#FFA500] text-transparent bg-clip-text">
               Orange{" "}
             </span>
-            Jordan’s <br /> Future{" "}
+            Jordans <br /> Future{" "}
             <span className="bg-gradient-to-r from-[#ff5900] to-[#FFA500] text-transparent bg-clip-text">
               Coders
             </span>
@@ -24,7 +24,7 @@ const Hero = () => {
             Apply Now
           </Button>
           <p className="text-xs opacity-50 text-center md:text-left">
-            Limited spots available. Don’t miss your chance to innovate!
+            Limited spots available. Dont miss your chance to innovate!
           </p>
           <div className="flex justify-center md:justify-start mt-4 rounded-full">
             {Array.from({ length: 5 }).map((_, index) => (
