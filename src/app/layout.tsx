@@ -19,8 +19,8 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <Navbar />
       <body className={inter.className}>
+        <Navbar />
         <ThemeProvider
           attribute="class"
           defaultTheme="system"
