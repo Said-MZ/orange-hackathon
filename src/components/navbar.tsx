@@ -6,6 +6,7 @@ import Image from "next/image";
 import Link from "next/link";
 
 const Navbar = () => {
+  // to do: replace with social media icons later
   const socials: [
     {
       title: string;
@@ -90,28 +91,38 @@ const Navbar = () => {
         <div
           className={`${
             isOpen ? "block" : "hidden"
-          } fixed inset-0 bg-black bg-opacity-50 z-40`}
+          } sm:hidden  fixed inset-0 bg-black bg-opacity-50 z-40`}
           onClick={() => setIsOpen(false)}
         ></div>
         {/* sidebar */}
         <div
           className={`${
             isOpen ? "left-0" : "-left-full"
-          } fixed top-0 h-full w-full  bg-white dark:bg-black z-50 transition-all duration-300 grid place-items-center text-center`}
+          } sm:hidden fixed top-0 h-full w-full  bg-white dark:bg-black z-50 transition-all duration-300 grid place-items-center text-center`}
         >
           <div>
             <div className="flex justify-end p-4"></div>
             <ul className="flex flex-col gap-6 p-4">
               {data.map((item, index) => (
                 <li key={index}>
-                  <Link href={item.url}>{item.title}</Link>
+                  <Link
+                    className="hover:brightness-150  dark:hover:opacity-75  transition-all"
+                    href={item.url}
+                  >
+                    {item.title}
+                  </Link>
                 </li>
               ))}
             </ul>
             <ul className="flex gap-4 p-4 opacity-45">
               {socials.map((item, index) => (
                 <li key={index}>
-                  <Link href={item.url}>{item.title}</Link>
+                  <Link
+                    className="hover:brightness-150  dark:hover:opacity-75   transition-all"
+                    href={item.url}
+                  >
+                    {item.title}
+                  </Link>
                 </li>
               ))}
             </ul>
@@ -120,25 +131,36 @@ const Navbar = () => {
             </div>
           </div>
         </div>
-        <Image
-          src="/logo.png"
-          alt="Orange Coding Academy"
-          width={64}
-          height={64}
-        />
+        <Link
+          className="hover:opacity-50  dark:hover:opacity-75  transition-all"
+          href={"/"}
+        >
+          <Image
+            src="/logo.png"
+            alt="Orange Coding Academy"
+            width={64}
+            height={64}
+          />
+        </Link>
+
         <ul className="  justify-between gap-6 hidden sm:flex">
           {data.map((item, index) => (
             <li key={index}>
-              <Link href={item.url}>{item.title}</Link>
+              <Link
+                className="hover:brightness-150  dark:hover:opacity-75 "
+                href={item.url}
+              >
+                {item.title}
+              </Link>
             </li>
           ))}
         </ul>
         <div className="hidden sm:block">
           <ModeToggle />
         </div>
-        <div className="flex gap-4">
+        <div className="flex gap-4 sm:hidden">
           <div
-            className="z-50 sm:hidden  flex flex-col gap-3 items-end justify-center dark:hover:brightness-125  hover:opacity-75 cursor-pointer transition-all h-8"
+            className="z-50 sm:hidden  flex flex-col gap-3 items-end justify-center dark:hover:brightness-125   hover:opacity-75  cursor-pointer transition-all h-8"
             onClick={() => setIsOpen(!isOpen)}
           >
             <div
